@@ -3,10 +3,7 @@ title: "Fast Resize with Generic Generator"
 author: [
 	{ name: "Luke Van",
 	link: "https://github.com/lukevanlukevan"},
-	{
-		name: "Test",
-		link: "https://github.com/lukevanlukevan"},
-	]
+]
 ---
 
 # Fast Resize with Generic Generator

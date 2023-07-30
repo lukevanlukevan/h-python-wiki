@@ -13,7 +13,7 @@ This is an example of how to utilize the Scripts portion of an HDA.
 
 In my example, I have built an empty HDA with 2 parameters, one file input and a button with an icon and no label.
 
-![](/ReadingParameters/1.png)
+![](/img/ReadingParameters/1.png)
 
 We can right click on the node and click on 'Type Properties' and go the 'Scripts' tab. At the bottom left, we can click the 'Event Handler' dropdown and select 'Python Module,' this is the event handler that deals with actions on the HDA.
 
