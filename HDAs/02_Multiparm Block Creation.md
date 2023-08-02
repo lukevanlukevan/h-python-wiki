@@ -49,9 +49,9 @@ Great! You've set your multiparm to the desired number of instances. If you want
 We've now created a multiparm block that holds a string parameter, and created 15 instances of said string parameter. Let's see what that snippet looks like:
 
 ```python
-node = hou.node('/obj/geo1/img/ME') #this is just a null inside of sops
-template = hou.FolderParmTemplate("my*block","My Block",folder_type = hou.folderType.MultiparmBlock)
-stemplate = hou.StringParmTemplate("my_instance*#","My Instance #",1)
+node = hou.node('/obj/geo1/ME') #this is just a null inside of sops
+template = hou.FolderParmTemplate("my_block","My Block",folder_type = hou.folderType.MultiparmBlock)
+stemplate = hou.StringParmTemplate("my_instance_#","My Instance #",1)
 template.addParmTemplate(stemplate)
 parmtuple = node.addSpareParmTuple(template)
 node.parm('my_block').set(15)
@@ -84,11 +84,11 @@ When creating the parm template, you can specify a 'tags' argument that will let
 Let's take our previous snippet and specify the 'multistartoffset' tag to set the 'First Instance' option through Python.
 
 ```python
-node = hou.node('/obj/geo1/img/ME') #this is just a null inside of sops
+node = hou.node('/obj/geo1/ME') #this is just a null inside of sops
 tags = dict()
 tags['multistartoffset'] = '0' #note that 0 is a string
-template = hou.FolderParmTemplate("my*block","My Block",folder_type = hou.folderType.MultiparmBlock,tags=tags)
-stemplate = hou.StringParmTemplate("my_instance*#","My Instance #",1)
+template = hou.FolderParmTemplate("my_block","My Block",folder_type = hou.folderType.MultiparmBlock,tags=tags)
+stemplate = hou.StringParmTemplate("my_instance_#","My Instance #",1)
 template.addParmTemplate(stemplate)
 parmtuple = node.addSpareParmTuple(template)
 node.parm('my_block').set(15)
@@ -96,7 +96,7 @@ node.parm('my_block').set(15)
 
 Say you've rebuilt this setup, let's provide you with an example snippet that sets your multiparm block to 15 instances and sets each of them to some random gibberish.
 
-In the snippet below, `index == str(i)`. This works because we had set 'First Instance' to 0 ! Don't forget that by default 'First Instance' is equal to 1 which means you would have to set index to be `str(i+1)`.
+In the snippet below, `index == str(i)`. This works because we had set 'First Instance' to 0! Don't forget that by default 'First Instance' is equal to 1 which means you would have to set index to be `str(i+1)`.
 
 Here's what the code looks like:
 
@@ -106,11 +106,11 @@ import string
 import hou #depending on where you write this you might not need this import
 
 def create_rand_string(length):
-characters = string.ascii_letters + string.digits + string.punctuation
-rstring = ''.join(random.choice(characters) for i in range(length))
-return rstring
+	characters = string.ascii_letters + string.digits + string.punctuation
+	rstring = ''.join(random.choice(characters) for i in range(length))
+	return rstring
 
-node = hou.node('/obj/geo1/img/ME')
+node = hou.node('/obj/geo1/ME')
 parm = node.parm('my_block')
 
 instances = 15
