@@ -77,7 +77,7 @@ Don't want to have to deal with that? Set 'First Instance' to 0, then you won't 
 
 ![1](/img/MultiparmBlockCreation/6.png)
 
-Earlier we created a multiparm block with Python. What if you want to set 'First Instance' using Python too ?
+Earlier we created a multiparm block with Python. What if you want to set 'First Instance' using Python too?
 
 When creating the parm template, you can specify a 'tags' argument that will let you set that 'First Instance' to whatever your heart desires ( as long as it is an unsigned int, aka x >=0.). Well I say uint but you then have to convert it to a string. You'll most likely only ever set it to '0' or '1'.
 
