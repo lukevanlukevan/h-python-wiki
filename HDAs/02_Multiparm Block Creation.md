@@ -9,7 +9,7 @@ author:
 
 # Multiparm Block Creation
 
-How to create multiparm blocks, set and access them through the Python API / HOM.
+How to create multiparm blocks, set and access them through the Python API/HOM.
 
 To create a multiparm block, you actually need to grab the "Folder" parameter. Then, set the "Folder Type" to one of the 'Multiparm Block' types.
 
