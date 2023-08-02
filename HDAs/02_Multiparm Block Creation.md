@@ -65,7 +65,7 @@ Here's the catch: when creating a multiparm, there's an option to decide how the
 
 ![1](/img/MultiparmBlockCreation/4.png)
 
-As you can see, our parms start at 1; that's because we have 'First Instance' set to 1. This means that when looping through the parms, we'll have to add 1 to the iterator.
+As you can see, our parms start at 1. That's because we have 'First Instance' set to 1. This means that when looping through the parms, we'll have to add 1 to the iterator.
 
 ![1](/img/MultiparmBlockCreation/5.png)
 
