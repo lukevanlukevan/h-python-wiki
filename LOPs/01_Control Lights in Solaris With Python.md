@@ -159,7 +159,7 @@ Let's have a look at our animation. Warning: flashing lights ![](/img/ControlLig
 
 We can randomize it further by generating a random int every time sample.
 
-````python
+```python
 	for i in range(start,end+1):
 
 		random.seed(seed+index+545+i)
@@ -168,7 +168,6 @@ We can randomize it further by generating a random int every time sample.
 
 		intensity.Set(rand_float * (i%randint==0) ,i)
 ```
-
 
 Note that you could do this in vex as well and it might be easier. Here's the code:
 
@@ -181,7 +180,7 @@ int randint = int(fit01(rand(i@elemnum+frame+365241),2,8));
 
 f@inputs:intensity = rand * (int(frame) % randint == 0);
 
-````
+```
 
 While this works, it's less performant than Python. The performance hit isn't that huge though so vex is still a good option inside of LOPs, if you'd rather go that route. If performance is crucial then Python is much better suited for the task.
 
