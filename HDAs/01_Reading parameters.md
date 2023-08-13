@@ -51,5 +51,13 @@ def OpenDir(kwargs):
     hou.ui.showInFileBrowser(input)
 ```
 
+The last step is to add a callback function to our buttom, to run the script when we press it.
+
+We use the function `hou.phm()` which is a shorthand for `hou.pwd().hdaModule()`. So with that, we can set the callback function to:
+
+```python
+hou.phm().OpenDir(kwargs)
+```
+
 So now our button will open the location selected in the file input parameter.
 
