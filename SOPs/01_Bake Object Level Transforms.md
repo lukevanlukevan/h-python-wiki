@@ -8,7 +8,6 @@ author: [{ name: "WaffleBoyTom", link: "https://github.com/WaffleBoyTom" }]
 This might seem a bit niche but I discovered this while helping someone with their HDA and thought it might be interesting to look at.
 
 Say you have this ![sm](/img/BakeObjLevelTransforms/1.png)
-3.png)
 How would you bake that transform so you just have a camera with a bunch of keyframes instead ? ![](/img/BakeObjLevelTransforms/2.png)
 
 My scene, as shown earlier, is simple : a camera ('/obj/cam1') and a null ('/obj/null1').
