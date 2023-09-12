@@ -11,7 +11,7 @@ The first thing you want to do is [download Qt Designer](https://build-system.fm
 
 Once you open it up, the "New Form" window should pop up, and I always just click the "Widget" one. Save this file to your `$PKG/scripts/python/PANEL_NAME` folder.
 
-You should be staring at a blank widget. The next step is to set the layout of the root widget. You would think you can drag a layout from the left side, but this software is so strange, that you do it a bit backwards. Drag a button from the left and then right click in the background of the widget and Set Layout to "Lay Out Vertically"
+You should be staring at a blank widget now. The next step is to set the layout of the root widget. You would think you can drag a layout from the left side, but this software is so strange, that you do it a bit backwards. Drag a button from the left and then right click in the background of the widget and Set Layout to "Lay Out Vertically"
 
 ![](/img/LayoutBuilding/2.mp4)
 
