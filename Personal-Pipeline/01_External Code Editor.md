@@ -10,7 +10,7 @@ author:  [
 
 My IDE of choice is VS Code. You know the drill here, pick the one you like the most, google things that don't line up!
 
-First thing: Open up your `settings.json` file and add this.
+Install the Pylance Exstention, and then open up your `settings.json` file and add this.
 
 ```json
 // paths depend on your Houdini installation
