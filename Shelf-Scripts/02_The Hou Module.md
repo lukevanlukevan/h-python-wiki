@@ -1,9 +1,6 @@
 ---
-title: "The Hou Module"
-author:  [
-	{ name: "Luke Van",
-	link: "https://github.com/lukevanlukevan"}
-	]
+title: The Hou Module
+author: [{ name: "Luke Van", link: "https://github.com/lukevanlukevan" }]
 ---
 
 # The Hou Module

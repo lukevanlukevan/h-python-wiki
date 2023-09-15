@@ -1,9 +1,6 @@
 ---
-title: "Using Kwargs"
-author:  [
-	{ name: "Luke Van",
-	link: "https://github.com/lukevanlukevan"}
-	]
+title: Using Kwargs
+author: [{ name: "Luke Van", link: "https://github.com/lukevanlukevan" }]
 ---
 
 # Using kwargs

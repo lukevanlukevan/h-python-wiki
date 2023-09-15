@@ -1,6 +1,6 @@
 ---
-title: "Creating Nodes"
-author: [{ name: "lukevanlukevan", link: "www.github.com/lukevanlukevan" }]
+title: Creating Nodes
+author: [{ name: "Luke Van", link: "https://github.com/lukevanlukevan" }]
 ---
 
 # Creating Nodes

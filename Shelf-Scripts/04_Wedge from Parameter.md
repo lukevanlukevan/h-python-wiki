@@ -1,9 +1,6 @@
 ---
-title: "Wedge from parameter"
-author:  [
-	{ name: "Luke Van",
-	link: "https://github.com/lukevanlukevan"}
-	]
+title: Wedge from Parameter
+author: [{ name: "Luke Van", link: "https://github.com/lukevanlukevan" }]
 ---
 
 # Wedge from parameter

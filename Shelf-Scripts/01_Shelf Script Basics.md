@@ -1,9 +1,6 @@
 ---
-title: "Shelf Script Basics"
-author:  [
-	{ name: "Luke Van",
-	link: "https://github.com/lukevanlukevan"}
-	]
+title: Shelf Script Basics
+author: [{ name: "Luke Van", link: "https://github.com/lukevanlukevan" }]
 ---
 
 # Shelf Script Basics
