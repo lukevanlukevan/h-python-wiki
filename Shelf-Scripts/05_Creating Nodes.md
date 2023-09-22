@@ -23,7 +23,7 @@ def create_named_node():
 	geo_name = hou.ui.readInput("Container name:")[1]
 ```
 
-Super basic here: we use the ![hou.ui](https://www.sidefx.com/docs/houdini/hom/hou/ui.html) function from the 'Scripted UI' section called `readInput()`
+Super basic here: we use the [hou.ui](https://www.sidefx.com/docs/houdini/hom/hou/ui.html) function from the 'Scripted UI' section called `readInput()`
 
 This stores the user input as the variable `geo_name`.
 
@@ -40,7 +40,7 @@ def createNamedGeo(kwargs):
 
 > We changed the function to take kwargs as an argument.
 
-Nowe we have a path variable that is reading `pane` from kwargs and using ![pwd](https://www.sidefx.com/docs/houdini/hom/hou/pwd.html) which gives us the path to our current location we called the script from. If you `print` it you can see it changes as we move around nodes.
+Nowe we have a path variable that is reading `pane` from kwargs and using [pwd](https://www.sidefx.com/docs/houdini/hom/hou/pwd.html) which gives us the path to our current location we called the script from. If you `print` it you can see it changes as we move around nodes.
 
 Full script:
 
