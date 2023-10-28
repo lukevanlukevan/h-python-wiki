@@ -7,7 +7,7 @@ author: [{ name: "Luke Van", link: "https://github.com/lukevanlukevan" }]
 
 Thank you very much to: 
 
-Luke Van for 21 pages
+Luke Van for 23 pages
 
-WaffleBoyTom for 8 pages
+WaffleBoyTom for 9 pages
 
