@@ -17,8 +17,7 @@ prim.SetCustomDataByKey("myCustomData","/geo/sphere")
 ```
 
 You know have custom data in your prim's metadata.
-
-![](/img/SavingThings/1.png)
+![](/img/CustomMetadata/1.png)
 
 You can now use a pretty long python expression to get that value inside a parameter (don't forget to tell Houdini it's a python expression and not a string value or a hscript expression)
 
@@ -43,5 +42,5 @@ Then to get it, use
 hou.node('.').input(0).stage().GetPrimAtPath('/geo/myCube').GetAttribute('myCustomAttrib').Get()
 ```
 
-![](/img/SavingThings/2.png)
+![](/img/CustomMetadata/2.png)
 
