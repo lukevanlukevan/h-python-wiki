@@ -71,7 +71,7 @@ Now, because we importing the code, we need to adjust the way it gets built. The
 ```python
 from PySide2 import QtWidgets
 
-class LVButton(QtWidgets.QtWidget):
+class LVButton(QtWidgets.QWidget):
 	def __init__(self):
 		super().__init__()
 		widget = QtWidgets.QLabel("Hello World!")

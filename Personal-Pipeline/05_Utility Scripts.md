@@ -26,17 +26,16 @@ def lv_error(f, message):
 
 	print("------------------------")
 	print(f"Error running: {f}")
-	print("Logging error")
 	print(message)
 	print("------------------------")
 
 
 def print_selected_nodes():
 	try:
-		nodes = hou.getSelectedNodes()
+		nodes = hou.selectedNodes()
 		print(nodes)
 	except Error as e:
-		lv_error("Print Selected Nodes", e.message)
+		lv_error("Print Selected Nodes", e)
 ```
 
 Now if the function ever goes wrong, you get a clean log for the error.
