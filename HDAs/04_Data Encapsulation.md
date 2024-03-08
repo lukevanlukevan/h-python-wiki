@@ -3,7 +3,7 @@ title: "Data Encapsulation"
 author: [{ name: "Milan Lampert", link: "https://github.com/lampmilan" }]
 ---
 
-# Encapsulate data in a HDA
+## Encapsulate data in a HDA
 
 Sometimes, we need to create data that is unique to a specific node and cannot be modified by other nodes of the same type.
 In the Python module, most data and variables are shared among every node of the same type.
