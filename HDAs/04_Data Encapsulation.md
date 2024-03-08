@@ -3,6 +3,8 @@ title: "Data Encapsulation"
 author: [{ name: "Milan Lampert", link: "https://github.com/lampmilan" }]
 ---
 
+# Data Encapsulation
+
 ## Encapsulate data in a HDA
 
 Sometimes, we need to create data that is unique to a specific node and cannot be modified by other nodes of the same type.
