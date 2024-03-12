@@ -51,7 +51,7 @@ def get_difference_from_invisible_parm(current_value):
 
 ## UserData
 
-By default, every node comes with two dictionaries: "userData" and "cachedUserData". If we take a closer look at the Houdini documentation, they even refer to these two dictionaries as the "Per-node user-defined data", making them the closest thing to the de facto encapsulation method. First, let's examine userData. It's a handy solution for storing string variables between sessions. Compared to parameters, userData can be created and accessed where we actually need it, reducing clutter in our parameter list. However, the problem is that it can only store strings, so we either heavily rely on type conversion or implement workarounds. In this case, I go with the last one and simply convert the UserData entry to an integer, which is then converted back to a string after we do the calculation.
+By default, every node comes with two dictionaries: "userData" and "cachedUserData". If we take a closer look at the Houdini documentation, they even refer to these two dictionaries as the ["Per-node user-defined data"](https://www.sidefx.com/docs/houdini/hom/nodeuserdata.html), making them the closest thing to the de facto encapsulation method. First, let's examine userData. It's a handy solution for storing string variables between sessions. Compared to parameters, userData can be created and accessed where we actually need it, reducing clutter in our parameter list. However, the problem is that it can only store strings, so we either heavily rely on type conversion or implement workarounds. In this case, I go with the last one and simply convert the UserData entry to an integer, which is then converted back to a string after we do the calculation.
 
 I define an entry in the `OnCreate` module, so there's no chance it's not available when I call it:
 
@@ -103,8 +103,8 @@ def get_difference_from_user_cache(current_value):
 Basically, it's like `cachedUserData`, but it's overcomplicated. It can store any data type for the current session. One minor advantage is that it gives you full access to every value while still encapsulating them. Additionally, it's open to extension, unlike the UserData classes (so we can add new methods if needed, such as `destroy_all` or `return_every_instance`).
 
 There are two main issues:
--Singleton is a controversial topic among Python developers because Python modules work exactly like a singleton. Here we use singleton because it's a more stable solution compared to HDA modules. (One issue I found out recently is that sometimes returning an object from another module actually gets converted to a string).
--The implementation is rather robust, and we need to handle instance removal as well, otherwise, we'll face with some nice "hou.ObjectWasDeleted" errors.
+- Singleton is a [controversial topic among Python developers](https://python-patterns.guide/gang-of-four/singleton/) because Python modules work exactly like a singleton. Here we use singleton because it's a more stable solution compared to HDA modules. (One issue I found out recently is that sometimes returning an object from another module actually gets converted to a string).
+- The implementation is rather robust, and we need to handle instance removal as well, otherwise, we'll face with some nice "hou.ObjectWasDeleted" errors.
 
 ```python
 # SINGLETON
